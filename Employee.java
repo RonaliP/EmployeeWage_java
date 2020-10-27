@@ -7,58 +7,34 @@ public class Employee{
 		System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTATION PROGRAM ON MASTER BRANCH");
 		Employee e=new Employee();
 		int ch=e.random;
-		switch(ch)
-		{
-		case 0:
-		    e.check();
-		    break;
-		case 1:
-		    e.part();
-		    break;
-		}
+		e.check();
 		e.month();
 	}
 
 
        	  Random r=new Random();
-          int random=r.nextInt(2);
-	  int part=r.nextInt(2);
+          int random=r.nextInt(3);
+	  int wage=20*8;
+
 	public void check()
 	{
-	 	if(random==1)
-	        {
+	   int ch=random;
+	   switch(random)
+		{
+	 	case 0:
                         System.out.println("EMPLOYEE IS PRESENT TODAY");
 			System.out.println("Wage/Hr=20 and Fulldayhours=8");
-			int wage=20*8;
 			System.out.println("WAGE WILL BE="+ wage);
-                }
-                else
-                {
+                case 1:
                         System.out.println("EMPLOYEE IS ABSENT TODAY");
-                }
-
-
-	}
-
-	 public void part()
-        {
-
-                if(part==1)
-                {
-                        System.out.println("EMPLOYEE IS DOING PARTTIME TODAY");
+                case 2:
+			System.out.println("EMPLOYEE IS DOING PARTTIME TODAY");
                         System.out.println("Wage/Hr=20 and Parttimehours=8");
-                        int wage=20*8;
                         System.out.println("PARTTIMEWAGE WILL BE="+ wage);
-                }
-                else
-                {
-                        System.out.println("EMPLOYEE IS NOT DOING PART TIME TODAY");
-                }
 
 
-        }
-
-
+		}
+	}
       public void month()
 	{
 		int count=0;
@@ -78,10 +54,8 @@ public class Employee{
 				}
 			}
 		}
-	int wage=20*8*count;
-	System.out.println("MONTHLY WAGE IS="+wage);
 	System.out.println("IN THIS MONTH EMPLOYEE WAS PRESENT FOR="+count+"DAYS");
-
+	System.out.println("MONTHLY WAGE IS="+wage);
 	}
 
 }
