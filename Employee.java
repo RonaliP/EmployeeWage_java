@@ -16,6 +16,7 @@ public class Employee{
 		    e.part();
 		    break;
 		}
+		e.month();
 	}
 
 
@@ -24,7 +25,6 @@ public class Employee{
 	  int part=r.nextInt(2);
 	public void check()
 	{
-
 	 	if(random==1)
 	        {
                         System.out.println("EMPLOYEE IS PRESENT TODAY");
@@ -59,6 +59,21 @@ public class Employee{
         }
 
 
+      public void month()
+	{
+		int count=0;
+		for(int i=0;i<30;i++)
+		{
+			int random=r.nextInt(2);
+			if(random==1)
+			{
+				count++;
+			}
+		}
+	int wage=20*8*count;
+	System.out.println("MONTHLY WAGE IS="+wage);
+	System.out.println("IN THIS MONTH EMPLOYEE WAS PRESENT FOR="+count+"DAYS");
 
+	}
 
 }
