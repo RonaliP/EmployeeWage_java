@@ -62,12 +62,20 @@ public class Employee{
       public void month()
 	{
 		int count=0;
-		for(int i=0;i<30;i++)
+		int maxday=20;
+		int hour=8;
+		for(int i=0;i<maxday;i++)
 		{
 			int random=r.nextInt(2);
 			if(random==1)
 			{
 				count++;
+				hour=hour+8;
+				if(hour>=100)
+				{
+					System.out.println("HOURS REACHED TO MAXIMUMOF 100 OR MORE THEN 100");
+					break;
+				}
 			}
 		}
 	int wage=20*8*count;
