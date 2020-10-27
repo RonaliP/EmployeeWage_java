@@ -6,8 +6,16 @@ public class Employee{
 	{
 		System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTATION PROGRAM ON MASTER BRANCH");
 		Employee e=new Employee();
-		e.check();
-		e.part();
+		int ch=e.random;
+		switch(ch)
+		{
+		case 0:
+		    e.check();
+		    break;
+		case 1:
+		    e.part();
+		    break;
+		}
 	}
 
 
