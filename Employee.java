@@ -1,5 +1,17 @@
 import java.util.*;
 
+
+class Company
+{
+	   public void Calculate(int companyWage,int workingHour,int workingDay)
+	   {
+		   int monthlyWage=companyWage*workingHour*workingDay;
+		   System.out.println(monthlyWage);
+
+	    }
+
+}
+
 public class Employee{
 
 	public static void main(String[] args)
@@ -10,6 +22,17 @@ public class Employee{
 		//int ch=e.random;
 		e.check();
 		e.month();
+		Company c1=new Company();
+		System.out.println("Company1 provides Salary");
+		c1.Calculate(30,8,25);
+		 System.out.println("Company2 provides Salary");
+		c1.Calculate(25,10,25);
+		System.out.println("Company3 provides Salary");
+		c1.Calculate(30,12,28);
+		System.out.println("Company4 provides Salary");
+		c1.Calculate(35,14,28);
+		System.out.println("Company5 provides Salary");
+		c1.Calculate(30,14,30);
 	}
 
           Random r=new Random();
