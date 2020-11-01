@@ -5,19 +5,20 @@ public class Employee{
 	public static void main(String[] args)
 	{
 		System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTATION PROGRAM ON MASTER BRANCH");
+		System.out.println("______________________________________________________________");
 		Employee e=new Employee();
-		int ch=e.random;
+		//int ch=e.random;
 		e.check();
 		e.month();
 	}
 
-
-       	  Random r=new Random();
+          Random r=new Random();
           int random=r.nextInt(3);
-	  int wage=20*8;
+          int wage=20*8;
 
 	public void check()
 	{
+
 	   int ch=random;
 	   switch(random)
 		{
@@ -55,7 +56,9 @@ public class Employee{
 			}
 		}
 	System.out.println("IN THIS MONTH EMPLOYEE WAS PRESENT FOR="+count+"DAYS");
-	System.out.println("MONTHLY WAGE IS="+wage);
+	System.out.println("MONTHLY WAGE IS="+ count*wage);
 	}
+
+
 
 }
